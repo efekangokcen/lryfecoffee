@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lryfecoffee</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<link rel="stylesheet" href="yazitipi.css">
+
+<body>
+    <header>
+        <a href="index.html" class="logo">LRYFE COFFEE</a>
+        <nav>
+            <ul>
+                <li><a href="menu.html">Menü</a></li>
+                <li><a href="hakkinda.html">Biz kimiz?</a></li>
+                <li><a href="subeler.html">Şubelerimiz</a></li>
+                <li><a href="iletisim.html">Bize Ulaşın</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="section-1">
+            <button id="scrollToBottom">LRYFE COFFEE</button>
+            <script>
+                const button = document.getElementById("scrollToBottom");
+
+                // Kaydırma olayını izleme
+                window.addEventListener("scroll", function () {
+                    const scrollPosition = window.scrollY; // Şu anki kaydırma pozisyonu
+                    const maxScroll = document.body.scrollHeight - window.innerHeight; // En alt pozisyon
+
+
+                    if (scrollPosition >= maxScroll - 900) {
+                        button.style.display = "none";
+                    } else {
+                        button.style.display = "block"; // 
+                    }
+                });
+
+                // Butona tıklandığında en alta kaydır
+                button.addEventListener("click", function () {
+                    window.scrollTo({
+                        top: document.body.scrollHeight,
+                        behavior: "smooth"
+                    });
+                });
+            </script>
+        </section>
+        <section id="section-2">
+            <div class="card">
+                <img src="tazecekilmiskahve.png" alt="">
+                <div class="container">
+                    <h2>Taze Çekilmiş Kahve Çekirdekleri</h2>
+                    <p>Lryfe Coffee olarak, kahve deneyiminizi zirveye taşımayı amaçlıyoruz. Özenle seçtiğimiz yüksek
+                        kaliteli kahve çekirdeklerini, sipariş anında taze taze çekiyor ve lezzetini en üst seviyeye
+                        çıkarıyoruz. Her bir fincan, taptaze aromasını ve zengin tatlarını koruyarak, size benzersiz bir
+                        kahve deneyimi sunuyor.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="kahvebardagi.png" alt="">
+                <div class="container">
+                    <h2>Hizmet Anlayışımız</h2>
+                    <p>
+                        Lryfe Coffee’de, taptaze kahve çekirdeklerinden hazırlanan özel lezzetlerimizi, modern ve rahat bir atmosferde sunuyoruz. Zengin menümüzle her damak tadına hitap ediyor, online sipariş kolaylığıyla kahve keyfinizi ayağınıza getiriyoruz. Özel etkinlikleriniz için de şubelerimizde şık alanlar sunuyoruz. Lryfe Coffee’de kahve, bir deneyimdir!
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="yeninesilkahve.png" alt="">
+                <div class="container">
+                    <h2>Modern Tasarım</h2>
+                    <p>Lryfe Coffee olarak, kahve deneyiminizi yalnızca lezzetle değil, estetikle de taçlandırıyoruz.
+                        Modern ve şık tasarım anlayışımızla, kendinizi evinizde gibi hissedeceğiniz rahat ve sıcak bir
+                        atmosfer sunuyoruz. Her detayda özenle seçilmiş malzemeler, yenilikçi dokunuşlar ve çağdaş
+                        çizgilerle, kahve keyfinizi görsel bir şölene dönüştürüyoruz. Burada sadece kahve değil, aynı
+                        zamanda tasarımın eşsiz uyumunu da deneyimleyeceksiniz.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Telif Hakkı © 2024 LRYFE. Tüm hakları saklıdır. <br>
+        Çağrı Merkezi: 0850 999 99 99 - info@lryfe.com
+    </footer>
+</body>
+
+</html>

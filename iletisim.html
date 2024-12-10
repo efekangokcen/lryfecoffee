@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lryfecoffee</title>
+    <link rel="stylesheet" href="yazitipi.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Amatic SC", sans-serif;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .modal-logo {
+            width: 100px;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">LRYFE COFFEE</a>
+        <nav>
+            <ul>
+                <li><a href="menu.html">Menü</a></li>
+                <li><a href="hakkinda.html">Biz kimiz?</a></li>
+                <li><a href="subeler.html">Şubelerimiz</a></li>
+                <li><a href="iletisim.html">Bize Ulaşın</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="w3-container w3-padding-64 w3-white w3-grayscale-min w3-xlarge">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">İletişim</h1>
+            <p>Çağrı Merkezi 0850 999 99 99</p>
+            <p><span class="w3-tag"></span>İstek/Öneri ve Şikayetleriniz için info@lryfe.com'a mail atabilirsiniz. </p>
+            <p class="w3-xxlarge"><strong>Bize Ulaşın</strong></p>
+            <form id="contactForm">
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="İsim..." required name="Name"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="E-mail..." required name="Email"></p>
+                <select class="w3-input w3-padding-16 w3-border" name="coffee" required>
+                    <option value="" disabled selected hidden>Hangi Şube</option>
+                    <option value="aydin">Aydın</option>
+                    <option value="izmir">İzmir</option>
+                    <option value="kusadasi">Kuşadası</option>
+                    <option value="bodrum">Bodrum</option>
+                </select>
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mesajınızı yazınız..." required name="Message"></p>
+                <p><button class="w3-button w3-light-grey w3-block" type="submit">Gönder</button></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="successModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-padding-32 w3-center">
+            <span class="w3-button w3-display-topright" onclick="document.getElementById('successModal').style.display='none'">&times;</span>
+            <img src="logo.png" alt="Logo" class="modal-logo">
+            <h2>Başarıyla gönderildi!</h2>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Form gönderimini engelle
+            document.getElementById("successModal").style.display = "block"; // Modalı göster
+        });
+    </script>
+</body>
+<footer>
+    Telif Hakkı © 2024 LRYFE. Tüm hakları saklıdır. <br>
+    Çağrı Merkezi: 0850 999 99 99 - info@lryfe.com
+</footer>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lryfecoffee</title>
+    <link rel="stylesheet" href="yazitipi.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <style>
+        body,
+        html {
+            height: 100%
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Amatic SC", sans-serif
+        }
+
+        .menu {
+            display: none
+        }
+
+        .bgimg {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("/w3images/pizza.jpg");
+            min-height: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">LRYFE COFFEE</a>
+        <nav>
+            <ul>
+                <li><a href="menu.html">Menü</a></li>
+                <li><a href="hakkinda.html">Biz kimiz?</a></li>
+                <li><a href="subeler.html">Şubelerimiz</a></li>
+                <li><a href="iletisim.html">Bize Ulaşın</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menu Container -->
+    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+        <div class="w3-content">
+
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Menü</h1>
+            <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Soğuk İçecekler</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Sıcak İçecekler</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Tatlılar</div>
+                </a>
+            </div>
+
+            <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Cold Brew</b> <span class="w3-right w3-tag w3-dark-grey w3-round">100TL</span></h1>
+                <hr>
+
+                <h1><b>Iced Americano</b> <span class="w3-right w3-tag w3-dark-grey w3-round">110TL</span></h1>
+                <hr>
+
+                <h1><b>Iced Flat White</b> <span class="w3-right w3-tag w3-dark-grey w3-round">125TL</span></h1>
+                <hr>
+
+                <h1><b>Iced Latte</b> <span class="w3-right w3-tag w3-dark-grey w3-round">125TL</span></h1>
+                <hr>
+
+                <h1><b>Iced Mocha</b> <span class="w3-tag w3-red w3-round">FAVORİ</span><span
+                        class="w3-right w3-tag w3-dark-grey w3-round">135TL</span></h1>
+                <hr>
+
+                <h1><b>Caramel Frappuccino</b> <span class="w3-tag w3-grey w3-round">Yeni</span><span
+                        class="w3-right w3-tag w3-dark-grey w3-round">145TL</span></h1>
+            </div>
+
+            <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Americano</b> <span class="w3-tag w3-grey w3-round">Popüler</span> <span
+                        class="w3-right w3-tag w3-dark-grey w3-round">95TL</span></h1>
+
+                <hr>
+
+                <h1><b>Cappuccino</b> <span class="w3-right w3-tag w3-dark-grey w3-round">125TL</span></h1>
+                <hr>
+
+                <h1><b>Flat White</b> <span class="w3-right w3-tag w3-dark-grey w3-round">125TL</span></h1>
+                <hr>
+
+                <h1><b>Latte</b> <span class="w3-right w3-tag w3-dark-grey w3-round">130TL</span></h1>
+                <hr>
+                <h1><b>Cortado</b> <span class="w3-right w3-tag w3-dark-grey w3-round">100TL</span></h1>
+                <hr>
+                <h1><b>Mocha</b> <span class="w3-right w3-tag w3-dark-grey w3-round">135TL</span></h1>
+                <hr>
+                <h1><b>Filtre Kahve</b> <span class="w3-right w3-tag w3-dark-grey w3-round">85TL</span></h1>
+                <hr>
+                <h1><b>Türk Kahvesi</b> <span class="w3-right w3-tag w3-dark-grey w3-round">70TL</span></h1>
+                <hr>
+                <h1><b>Çay</b> <span class="w3-right w3-tag w3-dark-grey w3-round">50TL</span></h1>
+                <hr>
+                <h1><b>Sıcak Çikolata</b> <span class="w3-right w3-tag w3-dark-grey w3-round">120TL</span></h1>
+            </div>
+
+
+            <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Kurabiye</b><span
+                        class="w3-right w3-tag w3-dark-grey w3-round">85TL</span></h1>
+                <hr>
+
+                <h1><b>Çikolatalı Kek</b> <span class="w3-right w3-tag w3-dark-grey w3-round">90TL</span></h1>
+                <hr>
+
+                <h1><b>Pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">95TL</span></h1>
+                <hr>
+
+                <h1><b>Brownie</b> <span class="w3-right w3-tag w3-dark-grey w3-round">110TL</span></h1>
+                <hr>
+
+                <h1><b>Havuçlu Kek</b><span class="w3-tag w3-grey w3-round">FAVORİ</span> <span class="w3-right w3-tag w3-dark-grey w3-round">125TL</span></h1>
+            </div><br>
+
+        </div>
+    </div>
+    <!-- Image of location/map -->
+    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-brown", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-brown";
+        }
+        document.getElementById("myLink").click();
+    </script>
+    <footer>
+        Telif Hakkı © 2024 LRYFE. Tüm hakları saklıdır. <br>
+        Çağrı Merkezi: 0850 999 99 99 - info@lryfe.com
+    </footer>
+</body>
+
+</html>
