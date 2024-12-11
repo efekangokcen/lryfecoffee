@@ -225,7 +225,6 @@ h2::selection {
 }
 
 #scrollToBottom {
-    position: fixed;
     transform: translate(+450%, +1600%);
     padding: 10px 20px;
     background-color: #795548;
