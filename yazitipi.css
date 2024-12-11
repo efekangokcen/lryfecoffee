@@ -225,11 +225,16 @@ h2::selection {
 }
 
 #scrollToBottom {
+    position: fixed;
+    transform: translate(+450%, +1600%);
+    padding: 10px 20px;
     background-color: #795548;
     color: white;
+    border: none;   
+    border-radius: 5px;
+    cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: 30px;
-    font-family: sans-serif;
+    font-size: 20px;
 }
 
 #scrollToBottom:hover {
