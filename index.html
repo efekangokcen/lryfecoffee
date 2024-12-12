@@ -13,6 +13,11 @@
 <body>
     <header>
         <a href="index.html" class="logo">LRYFE COFFEE</a>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <nav>
             <ul>
                 <li><a href="menu.html">Menü</a></li>
@@ -21,34 +26,15 @@
                 <li><a href="iletisim.html">Bize Ulaşın</a></li>
             </ul>
         </nav>
+        <script>
+            function toggleMenu() {
+                const navMenu = document.querySelector('nav ul');
+                navMenu.classList.toggle('active');
+            }
+        </script>
     </header>
     <main>
         <section id="section-1">
-            <button id="scrollToBottom">LRYFE COFFEE</button>
-            <script>
-                const button = document.getElementById("scrollToBottom");
-
-                // Kaydırma olayını izleme
-                window.addEventListener("scroll", function () {
-                    const scrollPosition = window.scrollY; // Şu anki kaydırma pozisyonu
-                    const maxScroll = document.body.scrollHeight - window.innerHeight; // En alt pozisyon
-
-
-                    if (scrollPosition >= maxScroll - 900) {
-                        button.style.display = "none";
-                    } else {
-                        button.style.display = "block"; // 
-                    }
-                });
-
-                // Butona tıklandığında en alta kaydır
-                button.addEventListener("click", function () {
-                    window.scrollTo({
-                        top: document.body.scrollHeight,
-                        behavior: "smooth"
-                    });
-                });
-            </script>
         </section>
         <section id="section-2">
             <div class="card">
