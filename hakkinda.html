@@ -9,10 +9,10 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #171717;
             margin: 0;
             padding: 0;
-            color: #333;
+            color: #795548;
         }
         .container {
             width: 80%;
@@ -22,7 +22,7 @@
         h1 {
             text-align: center;
             font-size: 36px;
-            color: #2c3e50;
+            color: #795548;
             margin-bottom: 20px;
         }
         p {
@@ -32,7 +32,7 @@
             text-align: justify;
         }
         .highlight {
-            color: green;
+            color: rgb(255, 80, 5);
             font-weight: bold;
         }
         .section {
@@ -50,6 +50,11 @@
 <body>
     <header>
         <a href="index.html" class="logo">LRYFE COFFEE</a>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <nav>
             <ul>
                 <li><a href="menu.html">Menü</a></li>
@@ -58,6 +63,12 @@
                 <li><a href="iletisim.html">Bize Ulaşın</a></li>
             </ul>
         </nav>
+        <script>
+            function toggleMenu() {
+                const navMenu = document.querySelector('nav ul');
+                navMenu.classList.toggle('active');
+            }
+        </script>
     </header>
     <style>
         .video-container {
@@ -67,7 +78,7 @@
         video {
             width: 100%;
             max-width: 800px; /* Videonun genişliği için üst sınır belirler */
-            border: 2px solid #ddd; /* Hafif bir kenarlık ekler */
+            border: 2px solid #000000; /* Hafif bir kenarlık ekler */
             border-radius: 8px; /* Köşeleri yuvarlatır */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge ekler */
         }
