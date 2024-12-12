@@ -11,10 +11,19 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
     <style>
-        body,
-        html {
-            height: 100%
-        }
+        header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Mobilde tüm genişliği kapsar */
+    height: auto;
+    max-width: auto; /* Masaüstü için genişlik sınırlanır */
+    background-color: black;
+    padding: 20px 30px;
+    background-image: url(logo.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: right;
+    }
 
         body,
         h1,
@@ -26,22 +35,18 @@
             font-family: "Amatic SC", sans-serif
         }
 
-        .menu {
-            display: none
-        }
 
-        .bgimg {
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-image: url("/w3images/pizza.jpg");
-            min-height: 90%;
-        }
     </style>
 </head>
 
 <body>
     <header>
         <a href="index.html" class="logo">LRYFE COFFEE</a>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <nav>
             <ul>
                 <li><a href="menu.html">Menü</a></li>
@@ -50,6 +55,12 @@
                 <li><a href="iletisim.html">Bize Ulaşın</a></li>
             </ul>
         </nav>
+        <script>
+            function toggleMenu() {
+                const navMenu = document.querySelector('nav ul');
+                navMenu.classList.toggle('active');
+            }
+        </script>
     </header>
 
     <!-- Menu Container -->
@@ -137,8 +148,6 @@
 
         </div>
     </div>
-    <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
 
     <script>
         // Tabbed Menu
