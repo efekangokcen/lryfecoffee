@@ -3,14 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bize Ulaşın-LryfeCoffee</title>
+    <title>İletişim-LryfeCoffee</title>
     <link rel="stylesheet" href="yazitipi.css">
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body,
+          header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Mobilde tüm genişliği kapsar */
+    height: auto;
+    max-width: auto; /* Masaüstü için genişlik sınırlanır */
+    background-color: black;
+    padding: 20px 30px;
+    background-image: url(logo.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: right;
+    }
+    .w3-button.w3-display-topright {
+    font-size: 40px;  /* Çarpı işaretinin boyutunu artırın */
+    color: black;  /* Çarpı işaretinin rengini siyah yapabilirsiniz */
+    padding: 10px;  /* Çarpı işaretinin etrafında biraz boşluk bırakın */
+}
         html {
             height: 100%;
         }
@@ -39,6 +56,11 @@
 <body>
     <header>
         <a href="index.html" class="logo">LRYFE COFFEE</a>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <nav>
             <ul>
                 <li><a href="menu.html">Menü</a></li>
@@ -47,9 +69,15 @@
                 <li><a href="iletisim.html">Bize Ulaşın</a></li>
             </ul>
         </nav>
+        <script>
+            function toggleMenu() {
+                const navMenu = document.querySelector('nav ul');
+                navMenu.classList.toggle('active');
+            }
+        </script>
     </header>
 
-    <div class="w3-container w3-padding-64 w3-white w3-grayscale-min w3-xlarge">
+    <div class="w3-container w3-padding-64 w3-black w3-grayscale-min w3-xlarge">
         <div class="w3-content">
             <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">İletişim</h1>
             <p>Çağrı Merkezi 0850 999 99 99</p>
