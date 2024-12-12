@@ -12,6 +12,11 @@
 <body>
     <header>
         <a href="index.html" class="logo">LRYFE COFFEE</a>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <nav>
             <ul>
                 <li><a href="menu.html">Menü</a></li>
@@ -20,41 +25,58 @@
                 <li><a href="iletisim.html">Bize Ulaşın</a></li>
             </ul>
         </nav>
+        <script>
+            function toggleMenu() {
+                const navMenu = document.querySelector('nav ul');
+                navMenu.classList.toggle('active');
+            }
+        </script>
     </header>
     <main>
-        <section id="section-2">
+        <section id="section-3">
             <div class="card">
                 <img src="disaridan.png" alt="">
                 <div class="container">
                     <h2>Bodrum</h2>
-                    <h3>Adres: Beşiktaş Mah. Çevre Caddesi No:22</h3>
-                    <h4>Telefon: 0252 999 9999</h4>
+                    <h3>Adres: Beşiktaş Mah. Çevre Caddesi No:22 <br><br>Telefon: 0252 999 9999</h3>
+                </div>
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d24279.52313283844!2d27.30317446808669!3d37.10044065995567!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1733965528518!5m2!1str!2str"></iframe>
                 </div>
             </div>
             <div class="card">
                 <img src="iceri2.png" alt="">
                 <div class="container">
                     <h2>Kuşadası</h2>
-                    <h3>Adres: Yeniağaç Mah. Papatya Caddesi No:6</h3>
-                    <h4>Telefon: 0256 999 9990</h4>
+                    <h3>Adres: Yeniağaç Mah. Papatya Caddesi No:6 <br> <br>Telefon: 0256 999 9990</h3>
+                </div>
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d9795.457359946466!2d27.25613204327931!3d37.85002414195513!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1733965647349!5m2!1str!2str"></iframe>
                 </div>
             </div>
             <div class="card">
                 <img src="iceri1.png" alt="">
                 <div class="container">
                     <h2>Aydın</h2>
-                    <h3>Adres: Mimar Sinan Mah. Turgut Özal Bulvarı No:16 - Efeler</h3>
-                    <h4>Telefon: 0256 999 9999</h4>
+                    <h3>Adres: Mimar Sinan Mah. Turgut Özal Bulvarı No:16 - Efeler <br> Telefon: 0256 999 9999</h3>
+                </div>
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15239.319395492646!2d27.831456787189172!3d37.84602881625619!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1733965768545!5m2!1str!2str"></iframe>
                 </div>
             </div>
             <div class="card">
                 <img src="disari3.png" alt="">
                 <div class="container">
                     <h2>İzmir</h2>
-                    <h3>Adres: Girne Atatürk Caddesi No:21 -Gaziemir Optimum AVM </h3>
-                    <h4>Telefon: 0232 999 9999</h4>
+                    <h3>Adres: Girne Atatürk Caddesi No:21 -Gaziemir Optimum AVM <br>Telefon: 0232 999 9999 </h3>
                 </div>
-
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14329.996230843462!2d27.145750706262938!3d38.32724209266324!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1733965806990!5m2!1str!2str"></iframe>
+                </div>
+        </section>
+        <section id="section-2">
+            <div class="card">
+            </div>
         </section>
 
     </main>
