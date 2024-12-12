@@ -238,7 +238,10 @@ form {
     text-align: center;
 
 }
-
+h1::selection{
+    background-color: rgba(0, 162, 255, 0.301);
+    color: cornsilk;
+}
 h2 {
     text-align: center;
 }
