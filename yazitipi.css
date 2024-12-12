@@ -89,7 +89,7 @@ nav ul li a:hover {
 }
 
 nav ul li a::selection {
-    background-color: red;
+    background-color: rgba(255, 196, 0, 0.291);
     color: cornsilk;
 }
 .hamburger {
@@ -238,14 +238,14 @@ form {
     text-align: center;
 
 }
-h1::selection{
-    background-color: rgba(0, 162, 255, 0.301);
-    color: cornsilk;
-}
+
 h2 {
     text-align: center;
 }
-
+h1::selection{
+    background-color: rgba(255, 196, 0, 0.291);
+    color: cornsilk;
+}
 
 h3 {
     background-color: #5d4037;
@@ -255,17 +255,17 @@ h3 {
 }
 
 h4::selection {
-    background-color: red;
+    background-color: rgba(255, 196, 0, 0.291);
     color: cornsilk;
 }
 
 h3::selection {
-    background-color: red;
+    background-color: rgba(255, 196, 0, 0.291);
     color: cornsilk;
 }
 
 h2::selection {
-    background-color: red;
+    background-color: rgba(255, 196, 0, 0.291);
     color: cornsilk;
 }
 
@@ -353,5 +353,11 @@ button {
         .navbar-menu.active {  
             display: flex; /* Menü aktif olduğunda görüntüle */  
         }  
+    }
+    .kaydirmali{
+        color: rgb(145, 145, 145);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 11px;
+        text-align: center;
     }
 
